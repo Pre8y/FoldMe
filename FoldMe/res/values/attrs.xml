@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="settings">
+        <attr name="totalfolds" format="integer"/>
+        <attr name="uniform" format="boolean"/>
+        <attr name="direction" format="integer"/>
+    </declare-styleable>
+</resources>

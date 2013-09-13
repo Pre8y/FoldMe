@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.appy.foldme.HorizontalFoldingMenu xmlns:android="http://schemas.android.com/apk/res/android"
+                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                             android:layout_width="match_parent"
+                             android:layout_height="match_parent"
+                             app:totalfolds="@integer/totalfolds"
+                             app:uniform="@bool/uniform"
+                             app:direction="@integer/direction">
+
+
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/intView">
+    <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="@integer/GapViewWeight"
+            android:id="@+id/GapView1">
+    </View>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="@integer/CapturedViewWeight"
+        android:id="@+id/ViewToCapture">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:scaleType="fitXY"
+            android:src="@drawable/gta5"
+            android:id="@+id/img">
+    </ImageView>
+    </ScrollView>
+    <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="@integer/GapViewWeight"
+            android:id="@+id/GapView2">
+    </View>
+</LinearLayout>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/outView"
+            android:layout_gravity="left|top"
+            android:scaleType="fitXY"
+            android:src="@drawable/android">
+    </ImageView>
+
+
+</com.appy.foldme.HorizontalFoldingMenu>
